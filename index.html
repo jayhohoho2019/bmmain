@@ -1,21 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Buildmore Solutions builds practical, secure AI infrastructure for modern enterprises.">
-  <title>Buildmore Solutions — Enterprise AI, Built to Scale</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Maintenance</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --border-color: rgba(255, 255, 255, 0.1);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-color: #f1f5f9;
+        --card-bg: rgba(255, 255, 255, 0.85);
+        --border-color: rgba(0, 0, 0, 0.08);
+        --text-main: #0f172a;
+        --text-muted: #64748b;
+        --accent: #0284c7;
+        --accent-glow: rgba(2, 132, 199, 0.15);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      padding: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 1.25rem;
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--accent);
+      background: var(--accent-glow);
+      margin-bottom: 1.75rem;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .pulse-dot::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.6;
+      animation: pulse 1.8s ease-out infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.6); opacity: 0.8; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border-color);
+      margin: 1.75rem 0;
+    }
+
+    .contact {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="index.html" aria-label="Buildmore Solutions home"><span class="logo"><i></i><i></i><i></i></span><span>BUILDMORE <b>SOLUTIONS</b></span></a><button class="menu" aria-label="Toggle navigation">Menu</button><nav><a class="active" href="index.html">Home</a><a href="products.html">Products & Technology</a><a href="solutions.html">Solutions</a><a href="about.html">About Us</a><a class="nav-cta" href="mailto:awssupport@buildmore-solutions.com">Contact us</a></nav></header>
-  <main>
-    <section class="hero"><div class="hero-copy reveal"><p class="kicker"><span></span> Enterprise AI solutions</p><h1>Turn AI ambition<br>into <em>operational impact.</em></h1><p class="lead">Buildmore Solutions connects strategy, data, technology, and teams—so enterprises can adopt AI securely and turn trusted knowledge into measurable value.</p><div class="actions"><a class="button primary" href="products.html">Explore our offerings <span>↗</span></a><a class="button ghost" href="solutions.html">View solutions</a></div><div class="proof"><div><strong>2</strong><span>Focused AI offerings</span></div><div><strong>E2E</strong><span>Strategy to deployment</span></div><div><strong>∞</strong><span>Ways to build more</span></div></div></div>
-      <div class="hero-visual reveal"><div class="orbit o1"></div><div class="orbit o2"></div><div class="core"><span class="logo large"><i></i><i></i><i></i></span><small>BUILDMORE CORE</small></div><div class="float-card fc1"><span class="dot cyan"></span><div><small>AI STRATEGY</small><b>Discover & design</b></div></div><div class="float-card fc2"><span class="dot blue"></span><div><small>TRANSFORMATION</small><b>Deploy & scale</b></div></div><div class="float-card fc3"><span class="dot purple"></span><div><small>KNOWLEDGE</small><b>Ground & retrieve</b></div></div></div>
-    </section>
-    <section class="trust"><span>BUILT FOR COMPLEX ENTERPRISE ENVIRONMENTS</span><div><b>Private Cloud</b><b>Hybrid Infrastructure</b><b>Multi-Model AI</b><b>Enterprise Security</b></div></section>
-    <section class="section intro"><p class="kicker"><span></span> Two ways to build more with AI</p><div class="section-heading"><h2>From transformation strategy to trusted enterprise knowledge.</h2><p>Practical technology and expert guidance designed around your systems, people, and business priorities.</p></div><div class="product-grid two"><a class="product-card" href="products.html#knowledge"><span class="num">01</span><div class="mini-diagram nodes"><i></i><i></i><i></i><i></i></div><h3>Customizable Knowledge Base</h3><p>Transform proprietary enterprise content into secure, accurate, AI-ready knowledge experiences.</p><b>Explore the product <span>→</span></b></a><a class="product-card" href="products.html#consulting"><span class="num">02</span><div class="mini-diagram bars"><i></i><i></i><i></i><i></i></div><h3>AI Transformation Consulting</h3><p>Turn high-value opportunities into a prioritized roadmap, production solution, and scalable AI capability.</p><b>Explore the service <span>→</span></b></a></div></section>
-    <section class="cta-band"><div><p class="kicker light"><span></span> Build what comes next</p><h2>Your AI roadmap deserves<br>a stronger foundation.</h2></div><a class="button white" href="mailto:awssupport@buildmore-solutions.com">Start a conversation <span>↗</span></a></section>
+
+  <main class="card">
+    <div class="status-badge">
+      <span class="pulse-dot"></span>
+      Scheduled Maintenance
+    </div>
+
+    <h1>We'll be right back</h1>
+    
+    <p>
+      The site is currently undergoing planned updates and improvements. Everything will be back up and running shortly.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="contact">
+      Need urgent assistance? Reach out at <a href="mailto:support@example.com">support@example.com</a>
+    </div>
   </main>
-  <footer><a class="brand" href="index.html"><span class="logo"><i></i><i></i><i></i></span><span>BUILDMORE <b>SOLUTIONS</b></span></a><p>Enterprise AI infrastructure, engineered for impact.</p><span>© 2026 Buildmore Solutions</span></footer>
-  <script src="client.js"></script>
-</body></html>
+
+</body>
+</html>
